@@ -1,0 +1,21 @@
+{
+  "name": "imgsizefix",
+  "version": "1.0.0",
+  "description": "Fix an IMG tags width and height attributes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/lab -m 2000"
+  },
+  "author": "AtuyL",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^0.9.0",
+    "imagesize": "^1.0.0"
+  },
+  "devDependencies": {
+    "chalk": "^0.5.1",
+    "install": "^0.1.7",
+    "lab": "^4.4.3",
+    "npm": "^1.4.27"
+  }
+}
