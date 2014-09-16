@@ -4,7 +4,7 @@
   "description": "Fix an IMG tags width and height attributes.",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/lab -m 2000"
+    "test": "lab -m 2000"
   },
   "author": "AtuyL",
   "license": "ISC",
@@ -17,5 +17,16 @@
     "install": "^0.1.7",
     "lab": "^4.4.3",
     "npm": "^1.4.27"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AtuyL/imgsixefix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AtuyL/imgsixefix/issues"
+  },
+  "homepage": "https://github.com/AtuyL/imgsixefix"
 }
