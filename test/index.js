@@ -64,6 +64,7 @@ lab.experiment("imgsizefix test", function () {
         };
 
     lab.test('sync test', function (done) {
+        options.filter = null;
         var result = imgsizefix.sync(html, path, options);
         // console.log(result);
         if (result) {
@@ -74,6 +75,23 @@ lab.experiment("imgsizefix test", function () {
     });
 
     lab.test('async test', function (done) {
+        options.filter = null;
+        imgsizefix(html, path, options,
+            function (error, result) {
+                // console.log(result);
+                if (!error && result) {
+                    done();
+                } else {
+                    done('error');
+                }
+            }
+        );
+    });
+
+    lab.test('filter test', function (done) {
+        options.filter = function(path, name, value){
+            return value;
+        }
         imgsizefix(html, path, options,
             function (error, result) {
                 // console.log(result);
